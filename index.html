@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Screenshot_3-removebg-preview.png">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!---google fonts--->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Zilla+Slab+Highlight&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!---css for mobile--->
+    <link rel="stylesheet" href="style.css">
+    <!---css for desktop--->
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 992px)">
+    <!-- navbar -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    <!-- navbar -->
+    <title>Debidwar Cyclists</title>
+</head>
+<body>
+    <!--navbar starts-->
+    <div class="navbar">
+        <div class="nav-logo col-6">
+            <img src="img/Screenshot_3-removebg-preview.png" alt="logo">
+        </div>
+        <div class="nav-menu col-6">
+            <a href="#">Home</a>
+            <a href="#about-us">About Us</a>
+            <a href="#work">Our Work</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </div>
+    <!--navbar end-->
+
+    <!-- section 1 start -->
+        <div class="portfolio">
+            <img class="top" src="img/settings.svg" alt="">
+                <div class="profile">
+                    <h1>
+                        A Journey That Never Ends
+                    </h1>
+                    <input class="button" type="button" value="Join Us">
+                </div>
+            <img class="bottom" src="img/settings.svg" alt="">
+        </div>
+
+    <!-- section 1 end -->
+
+    <!-- section 2 start -->
+        <div class="about-us" id="about-us">
+            <h2>About US</h2>
+            <hr class="dot-hr">
+            <div class="about-image col-6">
+                <img src="img/Screenshot_3.png" alt="">
+            </div>
+            <div class="about-des col-6" >
+                <p> Suscipit maxime</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <!-- <hr class="about-hr"> -->
+                <p>Lorem ipsum dolor </p>
+                <!-- <hr class="about-hr"> -->
+                <p>Lorem ipsum dolor sit.</p>
+                <!-- <hr class="about-hr"> -->
+                <p>Email: <a href="mailto:debiidwarcyclists2021@gmail.com">debidcycle21@gmail.com</a></p>
+                <!-- <hr class="about-hr"> -->
+                <p>Phone: <a href="tel:+8801820918996">+8801820918996</a></p>
+                <!-- <hr class="about-hr"> -->
+                <p>Website: <a href="http://127.0.0.1:5500/index.html#" target="_blank">DebidwarCycllists.com</a></p>
+                <!-- <hr class="about-hr"> -->
+
+                <p>
+                    <a href="">
+                        <button class="button2">More Info</button>
+                    </a>
+                </p>
+            </div>
+        </div>
+    <!-- section 2 end -->
+
+    <!-- section 3 start -->
+        <div class="our-work" id="work">
+            <div class="card1 col-4">
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="img/bicycle1.svg" class="rounded-img" alt="">
+                    </div>
+                    <div class="card-title">
+                        <h2>Lorem ipsum</h2>
+                    </div>
+                    <div class="card-des">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore voluptatum quis Ratione, veniam Omnis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card1 col-4">
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="img/cycling(9).svg" class="rounded-img" alt="">
+                    </div>
+                    <div class="card-title">
+                        <h2>Lorem ipsum</h2>
+                    </div>
+                    <div class="card-des">
+                        <div class="skills">
+                            <ul>
+                                <li class="speed">SPEED</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card1 col-4">
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="img/cycling.svg" class="rounded-img" alt="">
+                    </div>
+                    <div class="card-title">
+                        <h2>Lorem ipsum</h2>
+                    </div>
+                    <div class="card-des">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore voluptatum quis Ratione, veniam Omnis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- section 3 start -->
+
+<!-- secttion 4 start -->
+        <div class="contact-us">
+            <!-- <div class="contact col-6">
+                <h2>ACHIVMENTS</h2>
+                <hr class="dot-hr h">
+                <p>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, illo.</p>
+                <p>2. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, consequuntur!</p>
+                <p>3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, rem.</p>
+                <p>4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, eum!</p>
+            </div> -->
+            <div class="contact2" id="contact">
+                <h2>CONTACT US</h2>
+                <hr class="dot-hr">
+
+                <form action="mailto:sajibh2183@gmail.com" method="post" enctype="text/plain">
+                    <p><input type="text" placeholder="Your Name" name="Name"></p>
+                    <p><input type="email" placeholder="Your Email" name="Email"></p>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="your messege here"></textarea><br>
+                    <button class="button b" type="submit">SEND</button>
+                    <button class="button2 b" type="reset">CLEAR</button>
+                </form>
+
+            </div>
+            <!-- <div class="contact3 col-4">
+                <h2>More Ways to Contact</h2>
+                <hr class="dot-hr h">
+                <div class="media-links">
+                    <div class="media1 col-6">
+                        <a href=""><img class="media-img" src="img/Screenshot_3-removebg-preview.png" alt=""></a>
+                    <h3>FACEBOOK GROUP</h3>
+                    <p>Our main group of DEBIDWARcyclists</p>
+                    </div>
+                    <div class="media2 col-6">
+                        <a href=""><img class="media-img" src="img/Screenshot_3-removebg-preview.png" alt=""></a>
+                    <h3>FACEBOOK GROUP</h3>
+                    <p>Our main group of DEBIDWARcyclists</p> -->
+                    </div>
+                </div> 
+            </div>
+        </div>
+<!-- section 4 end -->
+
+<!-- footer start -->
+        <div class="footer">
+            <div class="copy col-4">
+                <span>copyright by &copy;Mohammad Sajib Hasan</span>
+            </div>
+            <div class="social col-4">
+                
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                
+            </div>
+            <div class="privacy col-4">
+                <span class="text">Privacy Policy</span>
+                <span class="text">Terms of Use</span>
+            </div>
+        </div>
+<!-- footer-end -->
+<script src="js/navbar-fixed.js"></script>
+</body>
+</html>
